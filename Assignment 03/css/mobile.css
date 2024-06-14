@@ -1,0 +1,114 @@
+@media screen and (min-width: 0px) and (max-width: 576px) {
+  /*---------------- nav bar adjustment---------------- */
+
+  #nav-bar .container-nobtstrap {
+    display: block;
+    padding-left: 0px;
+    position: relative;
+  }
+  #nav-bar .container-nobtstrap a {
+    /* padding-top: 20px;
+    padding-bottom: 20px; */
+    position: absolute;
+    max-width: 100%;
+    padding: 0px;
+    margin-right: 0px;
+    border-right: 2px solid white;
+  }
+  #nav-bar .container-nobtstrap .nav-info {
+    top: 0px;
+    left: 50px;
+  }
+  #nav-bar .container-nobtstrap .nav-profile {
+    top: 20px;
+    left: 50px;
+  }
+  #nav-bar .container-nobtstrap .nav-certificate {
+    top: 40px;
+    left: 50px;
+  }
+  #nav-bar .container-nobtstrap .nav-project {
+    top: 60px;
+    left: 50px;
+  }
+  /*----------------- about adjustment ---------------*/
+
+  #about .container-nobtstrap {
+    display: block;
+  }
+  #about .container-nobtstrap #target {
+    margin-bottom: 20px;
+  }
+  /*  */
+
+  /*--------------- certificate---------------- */
+  /* #certificate {
+    display: block;
+  } */
+  #certificate .container {
+    margin-left: 0px;
+  }
+  #certificate .container-nobtstrap {
+    /* Notes: To fix that problem, I use width 100% to let the content that is wrapped 
+              inside class "container-bootstrap" will responsive due to the size of the section */
+    width: 100%;
+  }
+  #certificate img {
+    /* To let the img still the same size no matter what screen size is */
+    max-width: 100%;
+    max-height: 100%;
+  }
+  #certificate .web-js {
+    border-bottom: 2px solid rgb(247, 247, 247);
+    padding-bottom: 0px !important;
+  }
+  #certificate .web-js .web-ctfc {
+    /* max-width: 100%;
+    max-height: 100%; */
+    padding-bottom: 10px;
+    border-right: 2px solid rgb(247, 247, 247);
+  }
+  /* add separate-line between certificate */
+  #certificate .web-js .web-ctfc p {
+    padding-bottom: 20px;
+    border-bottom: 2px solid grey;
+  }
+  #certificate .web-js .js-ctfc p {
+    padding-bottom: 20px;
+    border-bottom: 2px solid grey;
+  }
+  /*  */
+  #certificate .web-js .js-ctfc {
+    padding-top: 20px;
+    padding-left: 10px;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  #certificate .db-ctfc {
+    padding-top: 20px;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  /* --------------project---------------- */
+
+  #project .container-nobtstrap {
+    width: 100%;
+  }
+  #project .container-nobtstrap img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  /* Adding space between projects */
+  #project .list-project {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  /* ------------------ footer ------------------ */
+  #footer i {
+    width: 100%;
+  }
+  #footer .container-nobtstrap {
+    width: 100%;
+  }
+}

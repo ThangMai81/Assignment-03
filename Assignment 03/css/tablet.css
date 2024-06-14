@@ -1,0 +1,71 @@
+@media screen and (max-width: 768px) {
+  /* ----------------------banner----------------------- */
+  #banner img {
+    display: none;
+  }
+  /* ---------------------- nav-bar- ----------------- */
+
+  #nav-bar .container-nobtstrap img {
+    display: none;
+  }
+  #nav-bar .container-nobtstrap .nav-name {
+    display: none;
+  }
+  #nav-bar .container-nobtstrap a {
+    padding: 0px;
+    margin: 0px;
+    border-right: 2px solid white;
+  }
+
+  /* ----------------------- about ------------------- */
+
+  #about .container-nobtstrap #target {
+    min-width: 150px;
+  }
+  #about .container-nobtstrap #personal-info {
+    min-width: 200px;
+  }
+
+  /* ------------------ certificate ----------------------- */
+  #certificate .web-js img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  #certificate .container-nobtstrap {
+    /* Notes: To fix that problem, I use width 100% to let the content that is wrapped 
+              inside class "container-bootstrap" will responsive due to the size of the section */
+    width: 100%;
+  }
+  #certificate .web-js .js-ctfc {
+    padding-left: 40px;
+  }
+  #certificate .db-js img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  #certificate .container {
+    margin-left: 0px;
+  }
+
+  /* ------------------ project ----------------- */
+  #project .container-nobtstrap img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  /* Let the project will follow the screen size, and the grid layout will do the rest afterwards */
+  #project .container-nobtstrap {
+    width: 100%;
+  }
+  /* Adding margin between projects */
+  #project .list-project {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  /* ------------------ footer ------------------ */
+  #footer i {
+    width: 100%;
+  }
+  #footer .container-nobtstrap {
+    width: 100%;
+  }
+}

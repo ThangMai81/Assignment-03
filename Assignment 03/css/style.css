@@ -1,0 +1,525 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial;
+  font-size: 14px;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+section > .container-nobtstrap {
+  width: 1170px;
+  margin: auto;
+  display: block;
+  padding: 30px 50px;
+}
+
+/* Header */
+h1 {
+  font-size: 20px;
+}
+p {
+  line-height: 1.5;
+}
+.span-decoration {
+  border-radius: 10%;
+  background-color: rgb(0, 47, 255);
+  color: white;
+  border-left: 8px solid rgb(0, 47, 255);
+  border-right: 8px solid rgb(0, 47, 255);
+  border-top: 4px solid rgb(0, 47, 255);
+  border-bottom: 4px solid rgb(0, 47, 255);
+  font-style: Italic;
+}
+
+/* Banner */
+
+#banner {
+  position: relative;
+  width: 1400px;
+  display: float;
+  padding-bottom: 0px !important;
+}
+.banner-img {
+  width: 1400px;
+  height: auto;
+}
+.name-nobtstrap {
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+}
+
+/* Navigation Bar */
+#nav-bar {
+  text-align: center;
+}
+#nav-bar .container-nobtstrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+  width: auto;
+  height: 100%;
+  margin-bottom: 20px;
+  position: relative;
+}
+#nav-bar .container-nobtstrap a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  border-right: 2px solid grey;
+  padding-right: 100px;
+}
+#nav-bar .container-nobtstrap a i {
+  color: blue;
+}
+#nav-bar .container-nobtstrap img {
+  position: absolute;
+  border-radius: 50%;
+  width: 150px;
+  height: auto;
+  border: 10px solid lightgrey;
+  top: -20%;
+  left: 45%;
+}
+
+/* About */
+#about .container-nobtstrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+  align-items: stretch;
+  justify-content: space-between;
+  width: auto;
+  height: auto;
+}
+#about .container-nobtstrap #personal-info {
+  margin-top: 0px !important;
+}
+.section-title {
+  margin-bottom: 20px;
+}
+.mt-40 {
+  list-style: none;
+}
+.mt-40 li {
+  margin-bottom: 10px;
+}
+#target {
+  padding: 20px;
+  background-color: white;
+}
+#personal-info {
+  padding: 20px;
+  background-color: lightgrey;
+}
+
+/* Job info */
+#job-info .container-nobtstrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 40px;
+  column-gap: 40px;
+}
+
+#job-info h1 {
+  margin-left: 40px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+#job-info .container-nobtstrap .ex-flexbox {
+  display: flex;
+  align-items: center;
+  gap: 90px;
+  position: relative;
+}
+#job-info .container-nobtstrap .ex-flexbox i {
+  position: absolute;
+  top: 30px;
+  left: 250px;
+  font-size: 40px;
+}
+#job-info ul {
+  margin-left: 40px;
+  margin-right: 40px;
+  top: 20px;
+}
+#job-info ul li {
+  color: blue;
+  line-height: 30px;
+}
+#job-info ul li:first-child {
+  margin-bottom: 30px;
+}
+#job-info ul li:last-child {
+  margin-bottom: 100px;
+}
+#job-info ul li::marker {
+  content: "\2022";
+  font-size: 2rem;
+}
+#job-info ul li span {
+  color: black;
+}
+
+/* #job-info .container-nobtstrap h1 {
+  align-self: center;
+  justify-self: center;
+} */
+
+/* Hobby */
+
+#job-info .border-adjust {
+  border: 1px solid lightgrey;
+}
+#job-info .hobby-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px 1fr;
+  padding-bottom: 200px;
+}
+#job-info .hobby-container h1 {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#job-info .btn-hobby {
+  grid-column: 1 / -1;
+  position: relative;
+}
+#job-info .btn-hobby .view-more-btn {
+  position: absolute;
+}
+#job-info .btn-hobby .view-less-btn {
+  position: absolute;
+  top: 50px;
+}
+#job-info .bs-hobby {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+#job-info .hobby-container .big-icon {
+  margin-right: 20px;
+  font-size: 40px;
+}
+#job-info .hobby-container .small-icon {
+  font-size: 20px;
+  color: rgb(0, 160, 255);
+  border: 2px solid rgb(0, 160, 255);
+  padding: 10px;
+  border-radius: 50%;
+}
+
+/* Language */
+
+#job-info .language-container {
+  display: grid;
+  grid-template-rows: 100px 50px 50px 100px;
+}
+#job-info .language-container h1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#job-info .language-container i {
+  margin-right: 20px;
+  font-size: 40px;
+}
+#job-info .language-container div {
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+#job-info .language-container .level-bar {
+  background: #199cdb;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+#job-info .language-container .empty {
+  background: lightgrey;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+
+/* Skills */
+#job-info i {
+  padding-right: 15px;
+}
+#job-info .skills-container {
+  display: grid;
+  grid-template-rows: 100px 50px 50px 50px 50px 100px;
+}
+#job-info .skills-container h1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#job-info .skills-container i {
+  margin-right: 20px;
+  font-size: 40px;
+}
+
+#job-info .skills-container div {
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+#job-info .skills-container .level-bar {
+  background: #199cdb;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+#job-info .skills-container .empty {
+  background-color: lightgrey;
+}
+
+/* certificate */
+#certificate h1 {
+  margin-bottom: 0 !important;
+  height: 50px;
+}
+#certificate .container-nobtstrap {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 40px;
+}
+#certificate .container-nobtstrap .section-title {
+  grid-column: 1 / -1;
+}
+#certificate img {
+  width: 200px;
+  height: auto;
+  float: left;
+  margin-right: 40px;
+}
+#certificate .web-js {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+  border-bottom: 2px solid #d6c08d;
+}
+#certificate .web-ctfc {
+  border-right: 2px solid #d6c08d;
+  display: flex;
+  padding-right: 20px;
+}
+#certificate .js-ctfc {
+  /* because using grid layout, margin-left can be unused */
+  /* margin-left: 65px; */
+  display: flex;
+}
+#certificate .db-ctfc {
+  display: flex;
+  margin-top: 20px;
+}
+
+/* project */
+.span-project {
+  font-style: normal;
+}
+#project .container-nobtstrap {
+  /* Because using bootstrap grid layout for responsive, no need for adjust grid by myself :> */
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 1fr; */
+  column-gap: 20px;
+}
+#project .container-nobtstrap img {
+  /* width: 300px;
+  height: auto; */
+  max-width: 100%;
+  max-height: 100%;
+}
+#project .container-nobtstrap h1 {
+  grid-column: 1 / -1;
+}
+#project .container-nobtstrap .list-project {
+  border: 2px solid #d6c08d;
+}
+#project .container-nobtstrap .name-project {
+  padding: 20px;
+  font-weight: bold;
+}
+#project .container-nobtstrap .basic-info {
+  /* display: grid;
+  grid-template-rows: 1;
+  grid-template-columns: 50px 100px 100px 100px;
+  align-items: 50px; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-items: start;
+  align-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 2px solid #d6c08d;
+  border-bottom: 2px solid #d6c08d;
+}
+#project .container-nobtstrap .basic-info span:first-child {
+  /* display: grid;
+  grid-template-rows: 1;
+  grid-template-columns: 50px 100px 100px 100px;
+  align-items: 50px; */
+  margin-left: 5px;
+}
+#project .container-nobtstrap .detail-info {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#project .container-nobtstrap .detail-info .description {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  /* border-drawing */
+  padding-bottom: 20px;
+  border-bottom: 2px solid #d6c08d;
+}
+#project .container-nobtstrap .detail-info .responsibility {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  /* border-drawing */
+  padding-bottom: 20px;
+  border-bottom: 2px solid #d6c08d;
+}
+#project .container-nobtstrap .detail-info .technology {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  /* no border-drawing */
+}
+#project .container-nobtstrap .detail-info .first-span {
+  width: 75px;
+  margin-right: 50px;
+  padding-left: 5px;
+}
+#project .container-nobtstrap .detail-info .longest-span {
+  width: 200px;
+  height: auto;
+}
+
+/* footer */
+#footer .container-nobtstrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+#footer .container-nobtstrap ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  text-align: center;
+}
+#footer .container-nobtstrap li {
+  margin-right: 50px;
+  text-align: center;
+}
+#footer .container-nobtstrap ul li a {
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+#footer .container-nobtstrap ul li a:link {
+  color: black;
+}
+#footer .container-nobtstrap ul li a:visited {
+  color: red;
+}
+#footer .container-nobtstrap ul li a:hover {
+  background-color: black;
+  color: white;
+  border-radius: 10%;
+  border: 2px solid black;
+}
+#footer .container-nobtstrap ul li a:active {
+  color: blue;
+}
+#footer .container-nobtstrap i {
+  font-size: 40px;
+}
+#footer .icon-color {
+  color: blue;
+}
+
+/* -------------hidden function --------- */
+.hidden {
+  display: none;
+}
+/* +++ Email for personal info handling */
+.email-required {
+  position: relative;
+}
+.email-required span {
+  position: absolute;
+  top: 30px;
+  left: 80px;
+  font-size: 10px;
+}
+.email-input {
+  position: relative;
+  width: 300px;
+}
+.email-btn {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+  background-color: rgb(66, 94, 235);
+  border-radius: 5px;
+  border: rgb(0, 47, 255);
+  transition: 0.3s;
+}
+.email-btn:hover {
+  background-color: white;
+  color: black;
+  /* transition: 0.3s; */
+}
+/* +++ Button "Viewmore" in job-info handle  */
+
+.view-more-btn {
+  width: 100px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgb(167, 216, 69);
+  color: black;
+  transition: 0.5s;
+  margin-left: 150px;
+  margin-bottom: 50px;
+}
+.view-more-btn:hover {
+  background-color: rgb(67, 183, 177);
+  color: white;
+}
+/* +++ Button "Viewless" in job-info handle  */
+.view-less-btn {
+  width: 100px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgb(167, 216, 69);
+  color: black;
+  transition: 0.5s;
+  margin-left: 150px;
+  margin-bottom: 50px;
+}
+.view-less-btn:hover {
+  background-color: rgb(67, 183, 177);
+  color: white;
+}
